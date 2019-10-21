@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[RQ_SalesByProduct]
+(
+	[InvoiceNumber] NVARCHAR(50) NOT NULL , 
+    [InvoicedAt] NVARCHAR(50) NULL, 
+    [SoldBy] NVARCHAR(50) NOT NULL, 
+    [TenderedBy] NVARCHAR(50) NULL, 
+    [SoldOn] DATETIME2 NULL, 
+    [Customer] NVARCHAR(100) NULL, 
+    [ProductSKU] NVARCHAR(50) NOT NULL, 
+    [TrackingNumber] NVARCHAR(100) NOT NULL, 
+    [ContractNumber] NVARCHAR(50) NOT NULL, 
+    [ProductName] NVARCHAR(200) NULL, 
+    [Quantity] INT NULL, 
+    [TotalCost] MONEY NULL, 
+    [ListPrice] MONEY NULL, 
+    [SellingPrice] MONEY NULL, 
+    [NetProfit] MONEY NULL, 
+    [NetSales] MONEY NULL, 
+    [PricingDiscounts] MONEY NULL, 
+    [TotalProductCoupons] MONEY NULL, 
+    [Channel] NVARCHAR(50) NULL, 
+    [Region] NVARCHAR(50) NULL, 
+    [District] NVARCHAR(50) NULL, 
+    [Category] NVARCHAR(200) NULL, 
+    PRIMARY KEY ([InvoiceNumber], [SoldBy], [ProductSKU], [TrackingNumber], [ContractNumber])
+)

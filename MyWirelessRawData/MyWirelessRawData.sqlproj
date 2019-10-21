@@ -58,4 +58,20 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="RQ_SalesByProduct.sql" />
+    <Build Include="errors_RQ_SalesByProduct.sql" />
+    <Build Include="OPUSXML_customerInfo.sql" />
+    <Build Include="OPUSXML_customerInfo_existingFeatures.sql" />
+    <Build Include="OPUSXML_customerInfo_newFeatures.sql" />
+    <Build Include="OPUSXML_existingFeatures.sql" />
+    <Build Include="OPUSXML_newFeatures.sql" />
+    <Build Include="OPUSXML_newRatePlan.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="MyWirelessRawData.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyWirelessRawData.publish.xml" />
+  </ItemGroup>
 </Project>
