@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ATT_ShipmentDetailReport]
+﻿CREATE TABLE [dbo].[stg_ATT_ShipmentDetailReport]
 (
     [Region] NVARCHAR(50) NULL, 
     [Market] NVARCHAR(50) NULL, 
@@ -18,13 +18,3 @@
     [IsReceived] BIT NULL DEFAULT 0, 
     PRIMARY KEY ([InvoiceNumber], [PONumber], [ActualShipDate], [ItemNumber], [IMEI])
 )
-
-GO
-
-CREATE INDEX [IX_ATT_ShipmentDetailReport_IMEI] ON [dbo].[ATT_ShipmentDetailReport] ([IMEI])
-
-GO
-
-CREATE INDEX [IX_ATT_ShipmentDetailReport_IsReceived] ON [dbo].[ATT_ShipmentDetailReport] ([IsReceived])
-
-Go

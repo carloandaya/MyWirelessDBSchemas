@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>MyWirelessRawData</Name>
+    <Name>MyWirelessStaging</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{e21aac90-a6b5-4794-b106-9387d87040a8}</ProjectGuid>
+    <ProjectGuid>{58431be7-7745-4fe4-b5e0-9c112cd757d6}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>MyWirelessRawData</RootNamespace>
-    <AssemblyName>MyWirelessRawData</AssemblyName>
+    <RootNamespace>MyWirelessStaging</RootNamespace>
+    <AssemblyName>MyWirelessStaging</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -59,22 +59,29 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="RQ_SalesByProduct.sql" />
+    <Build Include="stg_RQ_SalesByProduct.sql" />
+    <Build Include="stats_RQ_SalesByProduct.sql" />
+    <Build Include="stg_RQ_Products.sql" />
+    <Build Include="stg_RQ_Employees.sql" />
     <Build Include="errors_RQ_SalesByProduct.sql" />
-    <Build Include="OPUSXML_customerInfo.sql" />
-    <Build Include="OPUSXML_customerInfo_existingFeatures.sql" />
-    <Build Include="OPUSXML_customerInfo_newFeatures.sql" />
-    <Build Include="OPUSXML_existingFeatures.sql" />
-    <Build Include="OPUSXML_newFeatures.sql" />
-    <Build Include="OPUSXML_newRatePlan.sql" />
-    <Build Include="ATT_ShipmentDetailReport.sql" />
+    <Build Include="stg_ATT_XML_customerInfo.sql" />
+    <Build Include="stg_ATT_XML_newEquipment.sql" />
+    <Build Include="stg_ATT_XML_newRatePlan.sql" />
+    <Build Include="stg_ATT_XML_customerInfo_newFeatures.sql" />
+    <Build Include="stg_ATT_XML_customerInfo_existingFeatures.sql" />
+    <Build Include="stg_ATT_XML_existingFeatures.sql" />
+    <Build Include="stg_ATT_XML_newFeatures.sql" />
+    <Build Include="stg_MW_XML_customerInfo.sql" />
+    <Build Include="stg_MW_XML_newRatePlan.sql" />
+    <Build Include="stg_MW_XML_newFeatures.sql" />
+    <Build Include="stg_MW_XML_customerInfo_newFeatures.sql" />
+    <Build Include="stg_MW_XML_existingFeatures.sql" />
+    <Build Include="stg_MW_XML_customerInfo_existingFeatures.sql" />
+    <Build Include="stg_RQ_Receiving.sql" />
+    <Build Include="stg_ATT_ShipmentDetailReport.sql" />
     <Build Include="errors_ATT_ShipmentDetailReport.sql" />
-    <Build Include="RQ_Receiving.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="MyWirelessRawData.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="MyWirelessRawData.publish.xml" />
+    <RefactorLog Include="MyWirelessStaging.refactorlog" />
   </ItemGroup>
 </Project>

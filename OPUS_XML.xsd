@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" name="customerInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" name="customerName" type="xs:string" />
+              <xs:element minOccurs="1" name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="street">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="50" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="city" type="xs:string" />
+                    <xs:element minOccurs="0" name="state" type="xs:string" />
+                    <xs:element minOccurs="0" name="zip" type="xs:string" />
+                    <xs:element minOccurs="0" name="country" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="homePhone" type="xs:string" />
+              <xs:element minOccurs="0" name="mobilePhone" type="xs:string" />
+              <xs:element minOccurs="1" name="accountNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="phoneType" type="xs:string" />
+              <xs:element minOccurs="0" name="newEquipment">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="IMEI" type="xs:string" />
+                    <xs:element minOccurs="0" name="SIM" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="newRatePlan">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="billCode" type="xs:string" />
+                    <xs:element minOccurs="0" name="MRC" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="effectiveDate" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="removedFeatures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="feature">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="billCode" type="xs:string" />
+                          <xs:element minOccurs="0" name="MRC" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="effectiveDate" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="newFeatures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="feature">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="billCode" type="xs:string" />
+                          <xs:element minOccurs="0" name="MRC" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="effectiveDate" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="billCycleDate" type="xs:string" />
+              <xs:element minOccurs="0" name="contractTerm" type="xs:string" />
+              <xs:element minOccurs="0" name="depositAmount" type="xs:decimal" />
+              <xs:element minOccurs="0" name="dealerCode" type="xs:string" />
+              <xs:element minOccurs="0" name="loginId" type="xs:string" />
+              <xs:element minOccurs="0" name="activationDate" type="xs:string" />
+              <xs:element minOccurs="0" name="transactionDate" type="xs:string" />
+              <xs:element minOccurs="0" name="directFulfillment" type="xs:string" />
+              <xs:element minOccurs="0" name="contractType" type="xs:string" />
+              <xs:element minOccurs="0" name="intlmntPlanId" type="xs:string" />
+              <xs:element minOccurs="0" name="customerFinancedAmount" type="xs:string" />
+              <xs:element minOccurs="0" name="existingFeatures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="feature">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="billCode" type="xs:string" />
+                          <xs:element minOccurs="0" name="MRC" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="effectiveDate" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="downPayment" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="66e1f43d-125f-43cb-8640-92fe5f8c5cbc" ChangeDateTime="07/26/2019 23:35:32">
+    <Property Name="ElementName" Value="[dbo].[DimProduct].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProductKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="51f7e93b-4921-4a99-827b-f81c6b4b32f8" ChangeDateTime="07/27/2019 00:23:09">
+    <Property Name="ElementName" Value="[dbo].[DimEmployee].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmployee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmployeeKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="126bdc67-f9be-4feb-973a-f1dba79cea31" ChangeDateTime="07/29/2019 16:44:11">
+    <Property Name="ElementName" Value="[dbo].[FactRQSales].[DateKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SoldOnDateKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ea8c67d-d0d3-48df-aa8e-8f273fd67097" ChangeDateTime="07/29/2019 16:54:00">
+    <Property Name="ElementName" Value="[dbo].[FactRQSales].[EmployeeKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SalespersonKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="52ac3a4d-cb57-4a05-8359-03d7e40e0d1d" ChangeDateTime="07/29/2019 17:07:20">
+    <Property Name="ElementName" Value="[dbo].[FK_FactRQSales_DimEmployee]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_FactRQSales_DimEmployee_Salesperson]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5bc09a27-5ad2-4283-a141-70419249242b" ChangeDateTime="07/29/2019 17:09:52">
+    <Property Name="ElementName" Value="[dbo].[FK_FactRQSales_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_FactRQSales_DimEmployee_DistrictManager]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4b3b6cd3-8dc3-42e3-bd76-b170d68fa346" ChangeDateTime="07/29/2019 17:10:44">
+    <Property Name="ElementName" Value="[dbo].[FK_FactRQSales_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_FactRQSales_DimEmployee_RegionalManager]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fb08f1c1-2443-4a80-9f80-ce29222c11bf" ChangeDateTime="07/29/2019 18:01:50">
+    <Property Name="ElementName" Value="[dbo].[DimManufacturer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimManufacturer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ManufacturerKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="608ed0b6-7615-4815-b587-9116b52154ab" ChangeDateTime="07/29/2019 18:44:11">
+    <Property Name="ElementName" Value="[dbo].[DimEmployee].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmployee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmployeeName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b0335f4a-7b07-4bb7-86bd-eaf666a6a11a" ChangeDateTime="07/29/2019 18:44:20">
+    <Property Name="ElementName" Value="[dbo].[DimEmployee].[IX_DimEmployee_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[DimEmployee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_DimEmployee_EmployeeName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4769f87a-67bc-4ead-b1f9-41e247103670" ChangeDateTime="07/29/2019 19:02:47">
+    <Property Name="ElementName" Value="[dbo].[DimCategory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimCategory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CategoryKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d86102a2-a8bd-4970-9ced-b9e9a2558fda" ChangeDateTime="07/29/2019 21:07:12">
+    <Property Name="ElementName" Value="[dbo].[FactRQSales].[SoldOnDateKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactRQSales]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DateKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc71a688-f44c-4af7-844a-af70cf34ca29" ChangeDateTime="07/29/2019 23:57:22">
+    <Property Name="ElementName" Value="[dbo].[DimStore].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimStore]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StoreKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a107a5a-6e0e-4fa2-ae06-a7eb252c0c88" ChangeDateTime="07/30/2019 00:36:40">
+    <Property Name="ElementName" Value="[dbo].[DimDistrict].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistrict]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistrictKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a1f7021-f7a0-4d2c-8c75-57a3cd78d497" ChangeDateTime="07/30/2019 18:22:27">
+    <Property Name="ElementName" Value="[dbo].[DimRegion].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRegion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RegionKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="792536d6-2d4a-41a8-bf76-f07037ea4cae" ChangeDateTime="09/27/2019 22:10:31">
+    <Property Name="ElementName" Value="[dbo].[DimSubcategory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSubcategory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SubcategoryKey" />
+  </Operation>
+</Operations>

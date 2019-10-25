@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>MyWirelessRawData</Name>
+    <Name>MyWirelessDW</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{e21aac90-a6b5-4794-b106-9387d87040a8}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{a946c7c7-ad1e-4e97-9adb-d648a40b6c11}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>MyWirelessRawData</RootNamespace>
-    <AssemblyName>MyWirelessRawData</AssemblyName>
+    <RootNamespace>MyWirelessDW</RootNamespace>
+    <AssemblyName>MyWirelessDW</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -59,22 +59,18 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="RQ_SalesByProduct.sql" />
-    <Build Include="errors_RQ_SalesByProduct.sql" />
-    <Build Include="OPUSXML_customerInfo.sql" />
-    <Build Include="OPUSXML_customerInfo_existingFeatures.sql" />
-    <Build Include="OPUSXML_customerInfo_newFeatures.sql" />
-    <Build Include="OPUSXML_existingFeatures.sql" />
-    <Build Include="OPUSXML_newFeatures.sql" />
-    <Build Include="OPUSXML_newRatePlan.sql" />
-    <Build Include="ATT_ShipmentDetailReport.sql" />
-    <Build Include="errors_ATT_ShipmentDetailReport.sql" />
-    <Build Include="RQ_Receiving.sql" />
+    <Build Include="DimProduct.sql" />
+    <Build Include="DimEmployee.sql" />
+    <Build Include="FactRQSales.sql" />
+    <Build Include="DimManufacturer.sql" />
+    <Build Include="DimCategory.sql" />
+    <Build Include="DimDate.sql" />
+    <Build Include="DimStore.sql" />
+    <Build Include="DimDistrict.sql" />
+    <Build Include="DimRegion.sql" />
+    <Build Include="DimSubcategory.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="MyWirelessRawData.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="MyWirelessRawData.publish.xml" />
+    <RefactorLog Include="MyWirelessDW.refactorlog" />
   </ItemGroup>
 </Project>
