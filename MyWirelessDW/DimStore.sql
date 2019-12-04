@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimStore]
 (
-	[StoreKey] INT NOT NULL PRIMARY KEY, 
+	[StoreKey] INT NOT NULL PRIMARY KEY IDENTITY, 
     [StoreName] NVARCHAR(50) NOT NULL, 
     [RegionKey] INT NOT NULL, 
     [DealerCode] NVARCHAR(10) NULL, 

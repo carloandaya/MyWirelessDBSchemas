@@ -203,4 +203,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ReceivingNumber" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="97a2836a-d8aa-42e6-ada9-c0137e97038b" ChangeDateTime="10/28/2019 23:44:49">
+    <Property Name="ElementName" Value="[dbo].[errors_RQ_Receiving].[InvoiceNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[errors_RQ_Receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReceivingNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="14da1f7e-5386-40d6-956d-a80d53cd5e52" ChangeDateTime="10/28/2019 23:44:51">
+    <Property Name="ElementName" Value="[dbo].[errors_RQ_Receiving].[ProductSKU]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[errors_RQ_Receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PONumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7a5bcaf3-cfb5-4783-b599-460981e2d47b" ChangeDateTime="10/28/2019 23:45:00">
+    <Property Name="ElementName" Value="[dbo].[errors_RQ_Receiving].[TrackingNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[errors_RQ_Receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProductSKU" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="abc24a5c-8405-4cca-877e-eb83ca8ddc05" ChangeDateTime="10/28/2019 23:45:02">
+    <Property Name="ElementName" Value="[dbo].[errors_RQ_Receiving].[ContractNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[errors_RQ_Receiving]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TrackingNumber" />
+  </Operation>
 </Operations>
