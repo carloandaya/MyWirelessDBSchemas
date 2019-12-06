@@ -71,6 +71,8 @@
     <Build Include="ATT_ShipmentDetailReport.sql" />
     <Build Include="errors_ATT_ShipmentDetailReport.sql" />
     <Build Include="RQ_Receiving.sql" />
+    <Build Include="ATT_PIN_Transactions.sql" />
+    <Build Include="RQ_PIN_Transactions.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyWirelessRawData.refactorlog" />

@@ -83,6 +83,8 @@
     <Build Include="errors_ATT_ShipmentDetailReport.sql" />
     <Build Include="stats_RQ_Receiving.sql" />
     <Build Include="errors_RQ_Receiving.sql" />
+    <Build Include="stg_ATT_PIN_Transactions.sql" />
+    <Build Include="stg_RQ_PIN_Transactions.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyWirelessStaging.refactorlog" />
