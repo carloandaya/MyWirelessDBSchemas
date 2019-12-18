@@ -10,7 +10,9 @@
     [TrackingNumber] NVARCHAR(50) NULL, 
     [Payment] MONEY NULL, 
     [CreatedBy] NVARCHAR(100) NULL, 
-    [Status] NVARCHAR(50) NULL DEFAULT 'Unreconciled', 
+    [RecStatus] NVARCHAR(50) NULL DEFAULT 'Unreconciled', 
+    [IsFinalized] BIT NULL DEFAULT 0, 
+    [DiscrepancyAmount] MONEY NULL, 
     CONSTRAINT [PK_stg_RQ_PIN_Transactions] PRIMARY KEY ([RelatedBillPay]) 
 )
 

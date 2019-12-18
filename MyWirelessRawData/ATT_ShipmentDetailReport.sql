@@ -16,6 +16,11 @@
     [IMEI] NVARCHAR(50) NOT NULL, 
     [TrackingNumber] NVARCHAR(50) NULL, 
     [IsReceived] BIT NULL DEFAULT 0, 
+    [DeliveryStatus] NVARCHAR(3) NULL, 
+    [StatusDate] DATE NULL, 
+    [PickupDate] DATE NULL, 
+    [ScheduledDeliveryDate] DATE NULL, 
+    [SignedBy] NVARCHAR(50) NULL, 
     PRIMARY KEY ([InvoiceNumber], [PONumber], [ActualShipDate], [ItemNumber], [IMEI])
 )
 
@@ -28,3 +33,6 @@ GO
 CREATE INDEX [IX_ATT_ShipmentDetailReport_IsReceived] ON [dbo].[ATT_ShipmentDetailReport] ([IsReceived])
 
 Go
+
+
+CREATE INDEX [IX_ATT_ShipmentDetailReport_TrackingNumber] ON [dbo].[ATT_ShipmentDetailReport] ([TrackingNumber])

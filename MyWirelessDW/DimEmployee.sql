@@ -6,5 +6,3 @@
 )
 
 GO
-
-CREATE UNIQUE INDEX [IX_DimEmployee_EmployeeName] ON [dbo].[DimEmployee] ([EmployeeName])

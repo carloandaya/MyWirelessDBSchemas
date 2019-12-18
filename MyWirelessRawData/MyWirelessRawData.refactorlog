@@ -98,4 +98,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="bdb32839-d39d-415e-af80-3b161b198b35" ChangeDateTime="12/06/2019 20:56:46">
+    <Property Name="ElementName" Value="[dbo].[ATT_PIN_Transactions].[Status]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ATT_PIN_Transactions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f99124e1-33bf-4191-8200-9d5026a4a38f" ChangeDateTime="12/06/2019 20:56:52">
+    <Property Name="ElementName" Value="[dbo].[RQ_PIN_Transactions].[Status]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RQ_PIN_Transactions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecStatus" />
+  </Operation>
 </Operations>

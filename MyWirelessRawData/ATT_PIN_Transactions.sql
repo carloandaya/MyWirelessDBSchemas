@@ -22,7 +22,9 @@
     [SalesRep] NVARCHAR(10) NULL, 
     [ExternalBillPayNumber] NVARCHAR(50) NULL, 
     [ExternalInvoiceNumber] NVARCHAR(50) NULL, 
-    [Status] NVARCHAR(50) NULL DEFAULT 'Unreconciled', 
+    [RecStatus] NVARCHAR(50) NULL DEFAULT 'Unreconciled', 
+    [IsFinalized] BIT NULL DEFAULT 0, 
+    [DiscrepancyAmount] MONEY NULL , 
     PRIMARY KEY ([OPUSTransactionNumber], [OPUSLineNumber])
 )
 
