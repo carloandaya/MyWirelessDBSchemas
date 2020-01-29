@@ -5,6 +5,7 @@
     [RegionKey] INT NOT NULL, 
     [DealerCode] NVARCHAR(10) NULL, 
     [RQAbbreviation] NVARCHAR(10) NULL, 
+    [IsActive] BIT NULL DEFAULT 0, 
     CONSTRAINT [FK_DimStore_DimRegion] FOREIGN KEY ([RegionKey]) REFERENCES [DimRegion]([RegionKey])
 )
 

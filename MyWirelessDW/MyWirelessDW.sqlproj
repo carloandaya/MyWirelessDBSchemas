@@ -71,6 +71,8 @@
     <Build Include="DimRegion.sql" />
     <Build Include="DimSubcategory.sql" />
     <Build Include="FactATTShipments.sql" />
+    <Build Include="DimEmployeeAssignment.sql" />
+    <Build Include="DimStoreAssignment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MyWirelessDW.refactorlog" />

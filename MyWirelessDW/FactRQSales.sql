@@ -15,7 +15,7 @@
     [RegionalManagerKey] INT NULL, 
     [DistrictKey] INT NULL,      
     CONSTRAINT [FK_FactRQSales_DimProduct] FOREIGN KEY ([ProductKey]) REFERENCES [DimProduct]([ProductKey]), 
-    CONSTRAINT [FK_FactRQSales_DimEmployee_Salesperson] FOREIGN KEY ([SalespersonKey]) REFERENCES [DimEmployee]([EmployeeKey]), 
+    CONSTRAINT [FK_FactRQSales_DimEmployee_Salesperson] FOREIGN KEY ([SalespersonKey]) REFERENCES [DimEmployee]([EmployeeKey]) ON UPDATE CASCADE, 
     CONSTRAINT [FK_FactRQSales_DimEmployee_GeneralManager] FOREIGN KEY ([GeneralManagerKey]) REFERENCES [DimEmployee]([EmployeeKey]), 
     CONSTRAINT [FK_FactRQSales_DimEmployee_DistrictManager] FOREIGN KEY ([DistrictManagerKey]) REFERENCES [DimEmployee]([EmployeeKey]), 
     CONSTRAINT [FK_FactRQSales_DimEmployee_RegionalManager] FOREIGN KEY ([RegionalManagerKey]) REFERENCES [DimEmployee]([EmployeeKey]), 
@@ -24,3 +24,7 @@
     CONSTRAINT [FK_FactRQSales_DimStore] FOREIGN KEY ([StoreKey]) REFERENCES [DimStore]([StoreKey]),
 	CONSTRAINT [FK_FactRQSales_DimDistrict] FOREIGN KEY ([DistrictKey]) REFERENCES [DimDistrict]([DistrictKey])
 )
+
+GO
+
+CREATE INDEX [IX_FactRQSales_Column] ON [dbo].[FactRQSales] ([SalespersonKey])
